@@ -31,9 +31,7 @@ for character in "Burak" {
 //Concatenating Strings and Characters
 
 let questionmark: Character = "?"
-
 let question = "Where is the nearest bank"
-
 var together = question + String(questionmark)
 
 
@@ -41,13 +39,11 @@ var together = question + String(questionmark)
 
 var twetyOne = 21
 var teen = 10
-
 var total = "\(twetyOne + teen)"
 
 //Counting Characters
 
 let myNameIs = "Burak Altunoluk"
-
 print(myNameIs.count)
 
 
@@ -55,11 +51,8 @@ print(myNameIs.count)
 
 
 var computer = "Commadore64"
-
 computer[computer.startIndex]
-
 computer[computer.index(before: computer.endIndex)]
-
 computer[computer.index(computer.startIndex,offsetBy: 5)]
 
 
@@ -70,8 +63,6 @@ computer.insert("6", at: computer.endIndex)
 
 //Substrings
 
-let selamlar = "Hello World"
-
-let index = selamlar.firstIndex(of: " ") ?? selamlar.endIndex
- 
-let first = selamlar[..<index]
+let greet = "Hello World"
+let index = greet.firstIndex(of: " ") ?? greet.endIndex
+let first = greet[..<index]

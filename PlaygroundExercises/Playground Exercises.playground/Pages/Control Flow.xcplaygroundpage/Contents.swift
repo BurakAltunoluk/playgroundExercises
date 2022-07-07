@@ -4,34 +4,24 @@ import Foundation
 // For-in Loops
 
 var customersNameArray = ["Sam","Jeff","Ain","Sean","john"]
-
 var customersSurnameArray = ["Cloody","Barrow","Gillan","Allen","Lennon"]
-
 var loopQuee = 0
 
 for i in customersNameArray {
-    
     print("Customer \(loopQuee+1)  \(i) \(customersSurnameArray [loopQuee])")
-    
     loopQuee += 1
 }
 
 for loop in 1...5 {
-    
     print("\(loop) Times ")
-    
 }
 
 
 //------
 
 let customersPhoneNumber = ["Ali Bey":"02839393849","Adem Bey":"0208167847","Hasan Bey":"0208474848"]
-
 for (CustomerName,PhoneNumber) in customersPhoneNumber {
-    
     print("Customer Name: \(CustomerName) - Customer Phone Number: \(PhoneNumber)")
-    
-    
 }
 
 //-----
@@ -59,10 +49,8 @@ while condition < 16 {
 var choosedNumber = 5
 
 switch choosedNumber {
-    
-case 3: print("Number 3")
-case 4: print("Number 4")
-    
+    case 3: print("Number 3")
+    case 4: print("Number 4")
 default:
     print("Not Number")
 }
@@ -70,14 +58,10 @@ default:
 //where ---
 
 var randomNumberTubles = (4,7)
-
 switch randomNumberTubles {
-    
-case let (x,y) where x==y : print("\(x)")
-    
-case let (x,y) where x>y : print("\(y)")
-    
-case (_, _):
+    case let (x,y) where x==y : print("\(x)")
+    case let (x,y) where x>y : print("\(y)")
+    case (_, _):
     print("Default")
 }
 

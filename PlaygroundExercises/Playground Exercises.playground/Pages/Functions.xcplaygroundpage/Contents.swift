@@ -29,16 +29,14 @@ cookingTime(choosedMeals: .pasta)
 func additionTwoNumber(Number1: Int, Number2: Int = 12) -> Int {
     return Number1 + Number2
 }
-
 additionTwoNumber(Number1: 24, Number2: 36)
 
+//----------
 
-func multibleValue(name: Int...) {
-    
-    print(name)
+func multibleValue(number: Int...) {
+    print(number)
 }
-
-multibleValue(name: 3,4,5)
+multibleValue(number: 3,4,5)
 
 //-------
 
@@ -46,7 +44,6 @@ func addTwoInts(_ a: Int, _ b: Int) -> Int {
     return a + b
 }
 var match: (Int,Int) -> Int = addTwoInts(_:_:)
-
 print(match(2,3))
 
 //---------

@@ -5,17 +5,12 @@ import Foundation
 
 let a = 30
 var b = 10
-
 b = a
 
 var (x,y) = (1,2)
-
 x = y
-
 if x == y {
-    
     // do something
-    
 }
 
 // Arithmetic Operators
@@ -29,10 +24,10 @@ var Message = "Hello" + " " + "World"
 
 print(Message)
 
-print(10+20)
-print(10-20)
-print(10*20)
-print(100/20)
+print(10 + 20)
+print(10 - 20)
+print(10 * 20)
+print(100 / 20)
 
 //Remainder Operator (a % b)
 
@@ -41,22 +36,19 @@ print(9 % 4)
 
 let minusSix = 6
 let alsoMinusSix = -minusSix
-
 var asd = -minusSix + 3
-
 print(asd)
 
 //Ternary Conditional Operator
 
-
 var saloonLightisOn = true
 var lightStatue = "on" // or off
 
-lightStatue = (saloonLightisOn ? "on" : "off")
+lightStatue = (saloonLightisOn ? "on": "off")
 
 print(" saloonLightis : \(lightStatue)")
 
-//output
+//print
 // saloonLightis : on
 
 
@@ -66,9 +58,7 @@ print(" saloonLightis : \(lightStatue)")
 //Nil-Coalescing Operator (??)
 
 var customerName: String?
-
 var customersNameArray = [String]()
-
 customersNameArray.append(customerName ?? "No name entered")
 
 
@@ -76,10 +66,7 @@ customersNameArray.append(customerName ?? "No name entered")
 //Range Operators
 
 for wheel in 1...5 {
-    
     print("The wheel turned \(wheel)")
-    
-    
 }
 
 //-----
@@ -91,7 +78,7 @@ let numberOfCustomerName = customerName?.count
 
 for i in 0..<4 {
     
-    print("Customer \(i+1) name is \(customersName[i])")
+    print("Customer \(i + 1) name is \(customersName[i])")
     
     
 }
@@ -100,9 +87,7 @@ for i in 0..<4 {
 //One-Sided Ranges
 
 for name in customersName[2...] {
-    
     print(name)
-    
 }
 
 //----
@@ -114,14 +99,10 @@ var password = "12345"
 var emailAdress = "admin@hotmail.com"
 var adminPanelIsOpen = false
 
-if (userName != "" && password != "" && deviceIsOnline) || adminPanelIsOpen{
-    
+if (userName != "" && password != "" && deviceIsOnline) || adminPanelIsOpen {
     print("trying to login")
-    
-}else{
-    
+} else {
     print("login failed")
-    
 }
 
 //-----

@@ -10,26 +10,19 @@ print("x = \(x) y = \(y) z = \(z)")
 
 
 if x <= 10 {
-    
     let numberX = "X kucuktur 10' dan "
     print(numberX)
-    
 }else{
-    
     let numberX = "X buyuktur 10' dan"
     print(numberX)
-    
 }
 //-----
 
 var Value = "13"
 
-if let Sorgula = Int(Value) {
-    
-    print("\(Sorgula)  value is Int")
-    
+if let stringOrInt = Int(Value) {
+    print("\(stringOrInt)  value is Int")
 } else {
-    
     print("\(Value)  value is String")
 }
 
@@ -37,10 +30,7 @@ if let Sorgula = Int(Value) {
 // -----
 
 var n1 = 12; let n2 = 16; var n3 = "32"
-
-
 var Total = n1 + n2 + Int(n3)!
-
 print(Total)
 
 
@@ -55,35 +45,22 @@ let deger: String? = "optinal String"
 
 var Error = (404,"Not Found")
 
-let (value1,value2) = ("Number", 36)
+let (value1,value2) = ("Error code ", 36)
 
 print("\(value1) = \(value2)")
 
 
 //----
 
-var openDoor = true
+var openDoor = false
 var lockDoor = false
 
-
 if openDoor {
-    
     print("Door is open")
-    
-}
-
-if lockDoor {
-    
-    
-    
-}else{
-    
+} else {
     print("Door is lock")
-    
 }
-var dur = ""
 
-dur = "a"
 //------
 
 

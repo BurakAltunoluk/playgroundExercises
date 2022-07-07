@@ -31,15 +31,11 @@ someFunc(Num1: 12, Num2: 24, myFunction: {(num1, num2) -> Int in
 //-------------------------
 
 let Array1 = [10,20,30,40]
-
 func test(num1: Int) -> Int {
    return num1 / 5
     }
 
-//--
-
 Array1.map(test(num1:))
-
 print(Array1.map({$0 / 5}))
 
 //------------------------------------------

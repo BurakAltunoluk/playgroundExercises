@@ -5,13 +5,13 @@ import Foundation
 
 //-----
 
-protocol YourDetails {
+protocol PersonalDetails {
     var yourName: String { get set }
     var yourAge: Int { get set }
     func printYourDetails()
 }
 
-struct adem: YourDetails {
+struct Persons: PersonalDetails {
     var yourName: String
     var yourAge: Int
     func printYourDetails() {
@@ -19,7 +19,7 @@ struct adem: YourDetails {
     }
 }
 
-var firstPerson = adem(yourName: "Sean", yourAge: 36)
+var firstPerson = Persons(yourName: "Sean", yourAge: 36)
 
 firstPerson.printYourDetails()
 
